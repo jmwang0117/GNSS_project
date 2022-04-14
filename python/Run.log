@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/pi/Desktop/python/Run.py", line 13, in <module>
+    x=L76X.L76X()
+  File "/home/pi/Desktop/python/L76X.py", line 82, in __init__
+    self.config = config.config(9600)
+  File "/home/pi/Desktop/python/config.py", line 14, in __init__
+    ser.serial = serial.Serial("/dev/ttyUSB0",Baudrate)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
